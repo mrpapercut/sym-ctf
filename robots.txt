@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /challenges/challenge5/
+Disallow: /private/
+Disallow: /cms/

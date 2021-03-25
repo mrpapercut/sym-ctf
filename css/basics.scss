@@ -1,0 +1,91 @@
+body {
+	background: #fafbfc;
+	color: #3d3d3d;
+	font-family: 'Source Code Pro', monospace;
+	width: 720px;
+	margin: .5em auto;
+}
+
+input, button {
+	background: #f5f5f5;
+	color: #3d3d3d;
+	border: 1px solid rgba(61, 61, 61, 0.5);
+	border-radius: 3px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: .9em;
+	height: 26px;
+	text-indent: .2em;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	padding: 0.25em 0.5em;
+	height: 30px;
+	text-indent: 0;
+	background: #3d3d3d;
+	color: #fff;
+}
+
+section {
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: .5em 0;
+}
+
+section#content {
+	margin: .5em auto 0;
+	display: inline-block;
+	width: 100%;
+
+	h2 {
+		text-align: center;
+
+		&.success {
+			color: $green;
+		}
+
+		&.error {
+			color: $red;
+		}
+	}
+
+	h3 {
+		text-align: center;
+		font-size: .8em;
+		margin-bottom: 1em;
+
+		&.passed {
+			font-weight: normal;
+		}
+	}
+
+	form {
+		position: relative;
+		width: 600px;
+		margin: 0 auto;
+		border: 1px solid #e1e4e8;
+		border-radius: 3px;
+		clear: both;
+
+		input, textarea {
+			width: 50%;
+			margin: 1em auto;
+			display: block;
+		}
+
+		button {
+			display: block;
+			margin: .5em auto;
+		}
+	}
+}
+
+a {
+	color: #3d3d3d;
+}

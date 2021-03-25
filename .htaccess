@@ -1,0 +1,12 @@
+RewriteEngine on
+
+ErrorDocument 404                 index.php?page=404
+
+#RewriteCond %{REQUEST_FILENAME}   !-f
+#RewriteCond %{REQUEST_FILENAME}   !-d
+RewriteRule ^login.*$             index.php?page=login
+RewriteRule ^logout.*$            index.php?page=logout
+RewriteRule ^register.*$          index.php?page=register
+RewriteRule ^score.*$             index.php?page=score
+RewriteRule ^challenges/([0-9]*)$ index.php?page=challenge&id=$1
+RewriteRule ^$	 				  index.php?page=challenge

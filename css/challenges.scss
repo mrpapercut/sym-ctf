@@ -1,0 +1,48 @@
+.challenges {
+	&.index,
+	&.scoreboard {
+		#colhead {
+			font-size: .8em;
+			margin-top: .5em;
+			margin-bottom: .5em;
+			width: 100%;
+			float: left;
+
+			#coltitle {
+				float: left;
+			}
+
+			#colscore {
+				float: right;
+			}
+		}
+
+		.chall-row {
+			line-height: 2em;
+			clear: both;
+
+			.name {
+				float: left;
+				text-transform: capitalize;
+			}
+
+			&.completed a {
+				color: $green;
+			}
+
+			.score {
+				float: right;
+			}
+		}
+	}
+
+	.description {
+		text-align: center;
+		margin: 1em 0;
+	}
+
+	select {
+		margin: 1em auto;
+		display: block;
+	}
+}
